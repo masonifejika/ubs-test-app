@@ -1,0 +1,26 @@
+#applicationList {
+
+    position:               absolute;
+    left:                   470px;
+    right:                  0;
+    top:                    95px;
+    bottom:                 0;
+    overflow:               scroll;
+    padding:                50px;
+
+}
+
+#applicationList h2,
+#applicationList h3 {
+
+    margin:                 0;
+    font-weight:            500;
+
+}
+
+#applicationList h3 {
+
+    margin:                 5px 0 40px 0;
+    position:               relative;
+
+}

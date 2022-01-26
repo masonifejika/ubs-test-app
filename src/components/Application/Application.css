@@ -1,0 +1,99 @@
+div.application {
+
+    background:                 #fff;
+    border-radius:              12px;
+    box-shadow:                 0 1px 1px rgba(0, 0, 0, 0.25);
+    overflow:                   auto;
+    padding:                    15px 20px;
+    margin-bottom:              15px;
+
+}
+
+div.application > ul {
+
+    margin:                     0;
+    padding:                    0;
+    list-style:                 none;
+
+}
+
+div.application > ul > li {
+
+    float:                      left;
+    border-left:                1px solid #ddd;
+    padding-left:               15px;
+
+}
+
+div.application > ul > li:first-child {
+
+    border-left:                0;
+    padding-left:               0;
+    width:                      170px;
+
+}
+
+div.application > ul > li[class^="spend-"] {
+
+    padding-left:               65px;
+    background-size:            34px;
+    background-repeat:          no-repeat;
+    background-position:        15px center;
+    width:                      150px;
+
+}
+
+div.application > ul > li.spend-gbp {
+
+    background-image:           url('../../images/flag-gb.png');
+    width:                      140px;
+
+}
+
+div.application > ul > li.spend-chf {
+
+    background-image:           url('../../images/flag-swiss.png');
+
+}
+
+div.application > ul > li.spend-eur {
+
+    background-image:           url('../../images/flag-euro.png');
+
+}
+
+div.application > ul > li.spend-usd {
+
+    background-image:           url('../../images/flag-usa.png');
+    width:                      auto;
+
+}
+
+@media screen and (max-width: 1640px) {
+
+    div.application > ul > li.spend-usd {
+        display:                none;
+    }
+
+}
+
+div.application > ul > li > span {
+
+    display:                    block;
+
+}
+
+div.application > ul > li > span:first-child {
+
+    text-transform:             uppercase;
+    font-size:                  11px;
+    font-weight:                500;
+    color:                      #888;
+
+}
+
+div.application > ul > li > span:last-child {
+
+    font-size:                  20px;
+
+}

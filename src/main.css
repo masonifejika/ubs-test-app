@@ -1,0 +1,14 @@
+/* Core CSS Styling at the Page Level */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto:wght@500;700&display=swap');
+
+body {
+
+    background:             #f8f8f8;
+    color:                  #333;
+    margin:                 0;
+    padding:                0;
+    font-family:            'Open Sans', sans-serif, Arial;
+    font-weight:            300;
+
+}

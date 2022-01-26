@@ -1,0 +1,67 @@
+#treeNavigation > ul {
+
+    list-style:             none;
+    padding:                0;
+    margin:                 0;
+    width:                  100%;
+    max-height:             200px;
+    overflow:               hidden;
+    transition:             max-height 0.7s;
+
+}
+
+#treeNavigation > ul[data-visibility="hidden"] {
+
+    max-height:             0;
+    transition:             max-height 0.3s;
+
+}
+
+#treeNavigation > ul > li {
+
+    font-size:              13px;
+    font-weight:            bold;
+    line-height:            25px;
+
+}
+
+#treeNavigation > ul[data-level="2"] > li {
+
+    text-indent:            20px;
+
+}
+
+#treeNavigation > ul[data-level="3"] > li {
+
+    text-indent:            65px;
+
+}
+
+#treeNavigation > ul > li > a {
+
+    text-decoration:        none;
+    color:                  #111;
+
+}
+
+#treeNavigation > ul > li > a.expand {
+
+    display:                inline-block;
+    width:                  25px;
+    height:                 25px;
+    background-image:       url(../../images/down-chevron.svg);
+    background-size:        9px;
+    background-repeat:      no-repeat;
+    background-position:    center;
+    transform:              rotate(-90deg);
+    text-indent:            -100em;
+    transition:             all 0.3s;
+
+}
+
+#treeNavigation > ul > li > a.expand[data-status="expanded"] {
+
+    transform: rotate(0deg);
+    transition: all 0.3s;
+
+}

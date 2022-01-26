@@ -1,0 +1,37 @@
+header {
+
+    background:             #fff;
+    box-shadow:             0 2px 10px rgba(0, 0, 0, 0.12);
+    padding:                25px;
+    border-top:             2px solid #e40000
+
+}
+
+header > h1 {
+
+    margin:                 0;
+    font-size:              30px;
+    font-weight:            300;
+    text-indent:            138px;
+    position:               relative;
+    height:                 42px;
+    line-height:            42px;
+    background-image:       url('../../images/ubs-logo.png');
+    background-size:        95px auto;
+    background-position:    0 4px;
+    background-repeat:      no-repeat;
+
+}
+
+header > h1::after {
+
+    content:                "";
+    display:                block;
+    height:                 100%;
+    width:                  1px;
+    background-color:       rgba(0, 0, 0, 0.15);
+    position:               absolute;
+    top:                    0;
+    left:                   115px;
+
+}
