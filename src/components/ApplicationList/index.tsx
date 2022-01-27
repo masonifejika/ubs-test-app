@@ -24,7 +24,7 @@ const ApplicationList: React.FC = () => {
             <h2>Showing {applicationStore.selectedBizCapability} applications with a total spend of more than £{applicationStore.minimumSpend.toLocaleString('en')}</h2>
             <h3>Number of results: <b>{applicationStore.filteredData.length}</b></h3>
             {applicationStore.filteredData.map(application => (
-                <Application key={application.id} id={application.id} name={application.name} spend={application.spend} />
+                <Application key={application.id} id={application.id} name={application.name} spend={application.spend} BCAP1={application.BCAP1} BCAP2={application.BCAP2} BCAP3={application.BCAP3} />
             ))}
         </div>
     )

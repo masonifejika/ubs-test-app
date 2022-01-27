@@ -2,9 +2,13 @@ import React from 'react';
 import IApplication from '../../types/Application';
 import './Application.css';
 
-const Application: React.FC<any> = ({ id, name, spend }: IApplication) => {
+const Application: React.FC<IApplication> = ({ id, name, spend }) => {
 
-    const exchangeRates: any = {
+    interface IExchangeRates {
+        [index: string]: number
+    }
+
+    const exchangeRates: IExchangeRates = {
         chf: 1.24,
         eur: 1.2,
         usd: 1.35
