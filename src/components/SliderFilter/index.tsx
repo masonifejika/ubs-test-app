@@ -25,8 +25,8 @@ const SliderFilter: React.FC = () => {
         <div id="sliderFilter">
             <h4>Filter applications by minimum spend</h4>
             <input type="range" min={sliderSettings.minimumValue} max={sliderSettings.maximumValue} step={sliderSettings.stepIncrement} onChange={changeSliderValue} />
-            <span className="min-value">£0</span>
-            <span className="max-value">£10,000</span>
+            <span className="min-value">£{sliderSettings.minimumValue}</span>
+            <span className="max-value">£{sliderSettings.maximumValue.toLocaleString('en')}</span>
         </div>
     )
 
